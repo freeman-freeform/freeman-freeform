@@ -10,14 +10,21 @@ import Pill from "./../src/components/55-atoms/pill/pill.html";
 import Scrollbar from "./../src/components/66-atoms/scrollbar/scrollbar.html";
 
 import './../src/css/freeform.css';
+import './../src/css/styles.css';
 
 storiesOf("Components|Atoms/Buttons", module)
   .add("Button", () => Button, {
+    'in-dsm': {
+      id: '5e30dac870092c6c05aa0860'
+    }
   });
 
-storiesOf("Components|Atoms/Badge", module)
-.add("Badge", () => Badge, {
-});
+  storiesOf("Components|Atoms/Badge", module)
+  .add("Badge", () => Badge, {
+    'in-dsm': {
+      id: '5e30daa01c35b8111d412e39'
+    }
+  });
 
 storiesOf("Components|Atoms/Breadcrumb", module)
 .add("Breadcrumb", () => Breadcrumb, {
