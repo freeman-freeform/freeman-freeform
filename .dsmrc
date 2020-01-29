@@ -1,7 +1,7 @@
 {
   "authToken": "Hk5on40-U",
   "dsmHost": "freeman.invisionapp.com",
-  "organization": "freeform",
+  "organization": "freeman",
   "outputDir": ".dsm",
   "storyPath": "stories/*.stories.js"
 }
