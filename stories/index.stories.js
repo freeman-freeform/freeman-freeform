@@ -15,7 +15,9 @@ import './../src/css/styles.css';
 storiesOf("Components|Atoms/Buttons", module)
   .add("Button", () => Button, {
     'in-dsm': {
-      id: '5e30dac870092c6c05aa0860'
+      id: '5e30dac870092c6c05aa0860',
+      docFilePath: '../components/button/button.docs.json',
+      containerClass: 'dsm-container'
     }
   });
 
