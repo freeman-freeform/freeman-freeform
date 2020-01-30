@@ -3,5 +3,5 @@
   "dsmHost": "freeman.invisionapp.com",
   "organization": "freeman",
   "outputDir": ".dsm",
-  "storyPath": "stories/index.stories.js"
+  "storyPath": "stories/*.stories.js"
 }
