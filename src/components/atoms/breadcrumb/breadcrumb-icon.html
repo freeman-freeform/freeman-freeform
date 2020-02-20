@@ -1,0 +1,46 @@
+
+
+<div class="padding">
+    <h2>Breadcrumbs Icon</h2>
+    Separators can be changed by using the <code class="highlighter-rouge">$breadcrumb-divider</code> variable.
+    <br>
+    
+    Symbol
+    <br>
+    <div class="highlight">
+        <pre>
+            <code class="highlighter-rouge">$breadcrumb-divider: quote(">");</code>
+        </pre>
+    </div>
+    
+    SVG 
+    <br>
+    <code class="highlighter-rouge">$breadcrumb-divider: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPjxwYXRoIGQ9Ik0yLjUgMEwxIDEuNSAzLjUgNCAxIDYuNSAyLjUgOGw0LTQtNC00eiIgZmlsbD0iY3VycmVudENvbG9yIi8+PC9zdmc+);</code>
+    <br>
+    
+    No separator
+    <br>
+    <code class="highlighter-rouge">$breadcrumb-divider: none;</code>
+    <div class="padding-top">
+        <nav aria-label="breadcrumb">
+            <ul class="breadcrumb">
+              <li class="breadcrumb-item breadcrumb-item-icon active" aria-current="page">Home</li>
+            </ul>
+        </nav>
+        
+        <nav aria-label="breadcrumb">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item breadcrumb-item-icon"><a href="#">Home</a></li>
+                <li class="breadcrumb-item breadcrumb-item-icon active" aria-current="page">Library</li>
+            </ul>
+        </nav>
+        
+        <nav aria-label="breadcrumb">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item breadcrumb-item-icon "><a href="#">Home</a></li>
+                <li class="breadcrumb-item breadcrumb-item-icon"><a href="#">Library</a></li>
+                <li class="breadcrumb-item breadcrumb-item-icon active" aria-current="page">Data</li>
+            </ul>
+        </nav>
+    </div>
+</div>

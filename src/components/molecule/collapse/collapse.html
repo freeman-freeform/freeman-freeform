@@ -1,0 +1,32 @@
+<div class="padding">
+    <h1>Collapse</h1>
+    <p>Toggle the visibility of content across your project with a few classes and our JavaScript plugins.</p>
+
+    <div class="padding-top">
+        <h3>How it works</h3>
+        <p>The collapse JavaScript plugin is used to show and hide content. Buttons or anchors are used as triggers that are mapped to specific elements you toggle. Collapsing an element will animate the <code class="highlighter-rouge">height</code> from its current value to <code class="highlighter-rouge">0</code>. Given how CSS handles animations, you cannot use <code class="highlighter-rouge">padding</code> on a <code class="highlighter-rouge">.collapse</code> element. Instead, use the class as an independent wrapping element.</p>
+    </div>
+
+    <div class="padding-top">
+        <h3>Usage</h3>
+        <p>The collapse plugin utilizes a few classes to handle the heavy lifting:</p>
+        <ul>
+            <li><code class="highlighter-rouge">.collapse</code> hides the content</li>
+            <li><code class="highlighter-rouge">.collapse.show</code> shows the content</li>
+            <li><code class="highlighter-rouge">.collapsing</code> is added when the transition starts, and removed when it finishes</li>
+          </ul>
+          <p>These classes can be found in <code class="highlighter-rouge">_transitions.scss</code>.</p>
+    </div>
+
+    <div class="padding-top">
+        <h3>Via data attributes</h3>
+        <p>Just add <code class="highlighter-rouge">data-toggle="collapse"</code> and a <code class="highlighter-rouge">data-target</code> to the element to automatically assign control of one or more collapsible elements. The <code class="highlighter-rouge">data-target</code> attribute accepts a CSS selector to apply the collapse to. Be sure to add the class <code class="highlighter-rouge">collapse</code> to the collapsible element. If you’d like it to default open, add the additional class <code class="highlighter-rouge">show</code>.</p>
+        <p>To add accordion-like group management to a collapsible area, add the data attribute <code class="highlighter-rouge">data-parent="#selector"</code>. Refer to the demo to see this in action.</p>
+    </div>
+
+    <div class="padding-top">
+        <h3>Via JavaScript</h3>
+        <p>Enable manually with:</p>
+        <p>$('.collapse').collapse()</p>
+    </div>
+</div>

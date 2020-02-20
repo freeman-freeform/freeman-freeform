@@ -1,0 +1,50 @@
+<div class="padding">
+    <h2>Menu alignment</h2>
+    <p>By default, a dropdown menu is automatically positioned 100% from the top and along the left side of its parent. Add <code class="highlighter-rouge">.dropdown-menu-right</code> to a <code class="highlighter-rouge">.dropdown-menu</code> to right align the dropdown menu.</p>
+
+    <p><strong>Heads up!</strong> Dropdowns are positioned thanks to Popper.js (except when they are contained in a navbar).</p>
+
+    <div class="btn-group">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Right-aligned menu
+        </button>
+        <div class="dropdown-menu dropdown-menu-right">
+          <button class="dropdown-item" type="button">Action</button>
+          <button class="dropdown-item" type="button">Another action</button>
+          <button class="dropdown-item" type="button">Something else here</button>
+        </div>
+    </div>
+</div>
+
+<div class="padding">
+    <h2>Responsive alignment</h2>
+    <p>If you want to use responsive alignment, disable dynamic positioning by adding the <code class="highlighter-rouge">data-display="static"</code> attribute and use the responsive variation classes.</p>
+
+    <div class="padding-top">
+        <p>To align <strong>right</strong> the dropdown menu with the given breakpoint or larger, add <code class="highlighter-rouge">.dropdown-menu{-sm|-md|-lg|-xl}-right</code>.</p>
+
+        <div class="btn-group">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+            Left-aligned but right aligned when large screen
+        </button>
+        <div class="dropdown-menu dropdown-menu-lg-right">
+            <button class="dropdown-item" type="button">Action</button>
+            <button class="dropdown-item" type="button">Another action</button>
+            <button class="dropdown-item" type="button">Something else here</button>
+        </div>
+        </div>
+    </div>
+    <div class="padding-top">
+        <p>To align <strong>left</strong> the dropdown menu with the given breakpoint or larger, add <code class="highlighter-rouge">.dropdown-menu-right</code> and <code class="highlighter-rouge">.dropdown-menu{-sm|-md|-lg|-xl}-left</code>.</p>
+        <div class="btn-group">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+              Right-aligned but left aligned when large screen
+            </button>
+            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+              <button class="dropdown-item" type="button">Action</button>
+              <button class="dropdown-item" type="button">Another action</button>
+              <button class="dropdown-item" type="button">Something else here</button>
+            </div>
+          </div>
+    </div>
+</div>

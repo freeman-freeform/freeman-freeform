@@ -1,6 +1,6 @@
 import { configure, addDecorator, addParameters } from '@storybook/html';
 import { withA11y } from '@storybook/addon-a11y';
-import centered from '@storybook/addon-centered/html';
+// import centered from '@storybook/addon-centered/html';
 import { initDsm } from '@invisionapp/dsm-storybook';
 
 
@@ -10,7 +10,7 @@ addParameters({
 
 addParameters({ docs: { page: null } });
 addDecorator(withA11y);
-addDecorator(centered);
+// addDecorator(centered);
 
 //Init Dsm
 initDsm({

@@ -1,0 +1,20 @@
+<div class="padding">
+    <h2>Dismiss on next click</h2>
+    <p>Use the <code class="highlighter-rouge">focus</code> trigger to dismiss popovers on the user’s next click of a different element than the toggle element.</p>
+
+    <div class="bd-callout bd-callout-danger">
+        <h4 id="specific-markup-required-for-dismiss-on-next-click">Specific markup required for dismiss-on-next-click</h4>
+        
+        <p>For proper cross-browser and cross-platform behavior, you must use the <code class="highlighter-rouge">&lt;a&gt;</code> tag, <em>not</em> the <code class="highlighter-rouge">&lt;button&gt;</code> tag, and you also must include a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex"><code class="highlighter-rouge">tabindex</code></a> attribute.</p>
+    </div>
+
+    <div class="padding-top">
+        <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
+    </div>
+</div>
+
+<script>
+    $('.popover-dismiss').popover({
+  trigger: 'focus'
+})
+</script>

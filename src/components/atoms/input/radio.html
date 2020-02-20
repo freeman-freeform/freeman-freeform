@@ -1,17 +1,66 @@
-<div class="radiobuttons">
-    <div class="ff-radio">
-        <label class="ff-radio-label">
-          <input type="radio" class="ff-radio-input" name="optradio">Option 1
-        </label>
-      </div>
-      <div class="ff-radio">
-        <label class="ff-radio-label">
-          <input type="radio" class="ff-radio-input" name="optradio">Option 2
-        </label>
-      </div>
-      <div class="ff-radio disabled">
-        <label class="ff-radio-label">
-          <input type="radio" class="ff-radio-input" name="optradio" disabled>Option 3
-        </label>
-      </div>
+<div class="padding">
+  <h2>Radio buttons</h2>
+  <p>Default radio buttons are improved upon with the help of <code class="highlighter-rouge">.form-check</code>, <b>a single class that improves the layout and behavior of the HTML elements.</b> Radio buttons are for selecting one option from many. </p>
+  <p>Disabled radios are supported. The <code class="highlighter-rouge">disabled</code> attribute will apply a lighter color to help indicate the input's state.</p>
+  <p>Radio buttons support HTML-based form validation and provide concise, accessible labels. As such, our <code class="highlighter-rouge">&lt;input&gt;</code>s and <code class="highlighter-rouge">&lt;label&gt;</code>s are sibling elements as opposed to an <code class="highlighter-rouge">&lt;input&gt;</code> within a <code class="highlighter-rouge">&lt;label&gt;</code>. This is slightly more verbose as you must specify <code class="highlighter-rouge">id</code> and <code class="highlighter-rouge">for</code> attributes to relate the <code class="highlighter-rouge">&lt;input&gt;</code> and <code class="highlighter-rouge">&lt;label&gt;</code>.</p>
+  <div class="padding-top">
+    <h4>Default Stacked</h4>
+    <p>By default, any number of radios that are immediate sibling will be vertically stacked and appropriately spaced with <code class="highlighter-rouge">.form-check</code>.</p>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+      <label class="form-check-label" for="exampleRadios1">
+        Default radio 1
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+      <label class="form-check-label" for="exampleRadios2">
+        Default radio 2
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+      <label class="form-check-label" for="exampleRadios3">
+        Default radio 3
+      </label>
+    </div>
+  </div>
+  
+  <div class="padding-top">
+    <h4>Default Inline</h4>
+    <p>Group radios on the same horizontal row by adding <code class="highlighter-rouge">.form-check-inline</code> to any <code class="highlighter-rouge">.form-check</code>.</p>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+      <label class="form-check-label" for="inlineRadio1">1</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+      <label class="form-check-label" for="inlineRadio2">2</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+      <label class="form-check-label" for="inlineRadio3">3</label>
+    </div>
+  </div>
+  
+  <div class="padding-top">
+    <h4>States</h4>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+      <label class="form-check-label" for="inlineRadio1">Default radio</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+      <label class="form-check-label" for="inlineRadio3">Disabled radio</label>
+    </div>
+  </div>
+  
+  <div class="padding-top">
+    <h4>Without Label</h4>
+    <p>Add <code class="highlighter-rouge">.position-static</code> to inputs within <code class="highlighter-rouge">.form-check</code> that don’t have any label text. Remember to still provide some form of label for assistive technologies (for instance, using <code class="highlighter-rouge">aria-label</code>).</p>
+    
+    <div class="form-check">
+      <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+    </div>
+  </div>
 </div>
